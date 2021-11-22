@@ -64,8 +64,6 @@ export default {
 
     toggleFavorite() {
       this.$store.commit('toggleFavorite', this.$props.product);
-
-      console.log(this.$props.product.favorite)
     }
   }
 }

@@ -22,7 +22,8 @@ export default new Vuex.Store({
       Vue.set(state.product, 'count', obj.count);
       Vue.set(state.product, 'price', obj.product.price);
       Vue.set(state.product, 'favorite', obj.product.favorite);
-      state.basket.push(state.product);
+      
+      state.basket.push({...state.product});
     },
 
     removeItemFromBasket(state, product) {

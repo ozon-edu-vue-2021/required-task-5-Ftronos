@@ -19,7 +19,7 @@ import BasketItem from './BasketItem.vue';
 export default {
   components: { BasketItem },
   computed: {
-    products() { 
+    products() {
       return this.$store.state.basket;
     },
     totalPrice () {
